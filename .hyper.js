@@ -4,6 +4,9 @@
 
 module.exports = {
   config: {
+	// Scrollback
+	scrollback: 9000,
+	
     // choose either `'stable'` for receiving highly polished,
     // or `'canary'` for less polished but more frequent updates
     updateChannel: 'stable',
@@ -28,7 +31,7 @@ module.exports = {
     letterSpacing: 1,
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: 'rgba(248,28,229,0.85)',
+    cursorColor: 'rgba(248,28,229,1)',
 
     // terminal text color under BLOCK cursor
     cursorAccentColor: '#000',
@@ -47,7 +50,7 @@ module.exports = {
     backgroundColor: '#fff',
 
     // terminal selection color
-    selectionColor: 'rgba(248,28,229,0.3)',
+    selectionColor: 'rgba(248,28,229,1)',
 
     // border color (window, tabs)
     borderColor: '#333',
@@ -142,11 +145,11 @@ module.exports = {
     
     // PLUGIN CONFIG
    hyperTransparent: {
-   //backgroundColor: '#000',
-   opacity: '0.30',
+   backgroundColor: '#000',
+   opacity: '0.5',
    //vibrancy: '' // ['', 'dark', 'medium-light', 'ultra-dark']
    vibrancy: ['light'],
-}
+   },
    
   },
 
