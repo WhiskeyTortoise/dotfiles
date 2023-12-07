@@ -16,7 +16,7 @@ force_color_prompt=yes
 alias lsa='ls -altr'
 alias cd..='cd ../'
 
-## SCRIPTS ##
+## Generic  ##
 alias checkip='curl ipinfo.io/ip'
 alias htb='ssh -p 2222 127.0.0.1'
 
@@ -24,3 +24,5 @@ alias updoc='docker ps -a --format "table {{.Names}}\t{{.Image}}\t{{.Status}}\t{
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
+# OS specific
+source .aliases.$(echo $(uname -s) |awk '{print tolower($0)}')
