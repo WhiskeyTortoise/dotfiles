@@ -18,7 +18,7 @@ alias cd..='cd ../'
 
 ## Generic  ##
 alias checkip='curl ipinfo.io/ip'
-alias htb='ssh -p 2222 127.0.0.1'
+alias htb='ssh -p 2222 kali@127.0.0.1'
 
 alias updoc='docker ps -a --format "table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}"'
 
