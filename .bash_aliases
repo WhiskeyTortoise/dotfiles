@@ -15,6 +15,7 @@ force_color_prompt=yes
 
 alias lsa='ls -altr'
 alias cd..='cd ../'
+alias updoc='docker ps -a --format "table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}"'
 
 ## Generic  ##
 alias checkip='curl ipinfo.io/ip'
