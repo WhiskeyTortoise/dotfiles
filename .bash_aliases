@@ -26,4 +26,10 @@ alias updoc='docker ps -a --format "table {{.Names}}\t{{.Image}}\t{{.Status}}\t{
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # OS specific
-source .aliases.$(echo $(uname -s) |awk '{print tolower($0)}')
+#source .aliases.$(echo $(uname -s) |awk '{print tolower($0)}')
+
+alias ls='lsd -l'
+
+
+# Programs
+alias vim='nvim'
