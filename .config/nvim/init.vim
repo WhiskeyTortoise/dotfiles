@@ -6,9 +6,12 @@ filetype plugin indent on
 " set syntax highlighting options
 syntax on
 
+" set tabs
+set tabstop=4 shiftwidth=2 expandtab
+
 " Color Scheme
-set background=dark
-color default
+colorscheme mytheme 
+
 
 " Pugins
 call plug#begin('~/.vim/plugged')
@@ -21,6 +24,7 @@ call plug#end()
 
 
 
+"hi Normal ctermfg=250 ctermbg=234 gui=None guifg=#bcbcbc guibg=#1c1c1c
 
 " Test
 let t:is_transparent = 0
@@ -29,9 +33,14 @@ function! Toggle_transparent()
         hi Normal guibg=NONE ctermbg=NONE 
         let t:is_transparent = 1
     else
-        set background=dark
-	hi Normal ctermfg=250 ctermbg=234 gui=None guifg=#bcbcbc guibg=#1c1c1c
+        colorscheme mytheme
         let t:is_transparent = 0
     endif
 endfunction
 nnoremap <C-t> : call Toggle_transparent()<CR>
+
+
+" Edit Colorscheme
+function! EditColorScheme()
+  execute "e " . "/home/adam/.config/nvim/colors/mytheme.vim"
+endfunction
