@@ -10,7 +10,10 @@ syntax on
 set tabstop=4 shiftwidth=2 expandtab
 
 " Color Scheme
-colorscheme mytheme 
+"colorscheme mytheme 
+
+" set clipboard
+set clipboard=unnamedplus
 
 
 " Pugins
@@ -33,7 +36,8 @@ function! Toggle_transparent()
         hi Normal guibg=NONE ctermbg=NONE 
         let t:is_transparent = 1
     else
-        colorscheme mytheme
+        colorscheme darkblue
+        "hi Normal guibg=262626 ctermbg=262626 
         let t:is_transparent = 0
     endif
 endfunction

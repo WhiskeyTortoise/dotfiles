@@ -3,6 +3,7 @@ set wildmenu
 set number
 
 set tabstop=4 shiftwidth=2 expandtab
+set clipboard=unnamedplus
 
 syntax on
 colorscheme hackertime 
