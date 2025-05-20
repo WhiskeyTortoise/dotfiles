@@ -10,12 +10,9 @@ colorscheme hackertime
 highlight Normal ctermfg=grey ctermbg=none
 
 " Plugins
-call plug#begin()
-
-Plug 'scrooloose/nerdtree'
-Plug 'terryma/vim-multiple-cursors'
-
-call plug#end()
+" call plug#begin()
+" 
+" call plug#end()
 
 " Toggle Transparency
 let t:is_transparent = 0
